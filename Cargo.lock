@@ -362,9 +362,8 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.20.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fff78fc74d175294f4e83b28343315ffcfb114b156f0185e9741cb5570f50e2f"
+version = "0.20.0"
+source = "git+https://github.com/cpu/rustls.git?branch=cpu-stream-unexpected-eof-wip#1acb165b718ce44fab9712173b4dfdbdeda116fc"
 dependencies = [
  "log",
  "ring",

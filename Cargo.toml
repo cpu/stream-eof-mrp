@@ -1,2 +1,6 @@
 [workspace]
 members = ["mrp-notokio", "mrp-tokio"]
+
+[patch.crates-io]
+#rustls = { path = "../rustls/rustls" }
+rustls = { git = 'https://github.com/cpu/rustls.git', branch = 'cpu-stream-unexpected-eof-wip' }
