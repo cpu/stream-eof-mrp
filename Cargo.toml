@@ -1,0 +1,2 @@
+[workspace]
+members = ["mrp-notokio", "mrp-tokio"]

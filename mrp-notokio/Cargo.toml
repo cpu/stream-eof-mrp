@@ -1,0 +1,8 @@
+[package]
+name = "mrp-notokio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing-subscriber = "0.3.16"
+tungstenite = { version = "0.18.0", features = ["rustls-tls-webpki-roots"] }

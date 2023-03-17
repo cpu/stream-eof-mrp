@@ -1,0 +1,12 @@
+[package]
+name = "mrp-tokio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version="1.26.0", features = ["rt", "macros"]}
+tokio-macros = "1.8.2"
+tokio-stream = "0.1.12"
+tokio-tungstenite = {version= "0.18.0", features=["rustls-tls-webpki-roots"]}
+tracing-subscriber = "0.3.16"
+tungstenite = { version = "0.18.0", features = ["rustls-tls-webpki-roots"] }
