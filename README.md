@@ -28,7 +28,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 * Restore the `patch` in the workspace `Cargo.toml` to use the patched Rustls dependency.
 * `cargo build`
 * Run the reproducer that uses `Stream`:
-  * `cargo run --bin mrp-tokio | grep "EOF"`
+  * `cargo run --bin mrp-notokio | grep "EOF"`
   * Note that an unexpected EOF **does** occur:
 ```bash
 [nix-shell:~/Code/Rust/stream-eof-mrp]$ cargo run --bin mrp-notokio | grep "EOF"
